@@ -4,14 +4,14 @@ import cors from 'cors'
 const app = express();
 app.use(cors());
 
-app.get('/', async (req, resp) => {
+app.get('/pessoas', async (req, resp) => {
     try {
         let mensagens = await
             db.tb_lista_negra.findAll({
                 where: {
-                    id_sala: req.params.salaId
+                    id_mensagem: req.params.id
     },
-    include: ['tb_usuario', 'tb_sala'],
+    
     });
 
         resp.send(mensagens);
@@ -20,14 +20,14 @@ app.get('/', async (req, resp) => {
     }
  })
 
- app.get('/chat/:salaId', async (req, resp) => {
+ app.get('/pessoa2', async (req, resp) => {
     try {
-        let mensagens = await
-            db.tb_lista_negra.findAll({
+        let mensagens = await db.tb_lista_negra.findAll(
+            {
                 where: {
-                    id_sala: req.params.salaId
-    },
-    include: ['tb_usuario', 'tb_sala'],
+                    id: req.params.pessoas
+    }
+    
     });
 
         resp.send(mensagens);
