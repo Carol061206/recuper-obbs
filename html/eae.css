@@ -43,13 +43,13 @@ input, button {
     border-right: 10px solid transparent;
 }
 
-.devSchool {
+.Lista.Negra.uoooohohohoh {
     color: white;
     font-size: 28px;
     font-weight: 700;
 }
 
-.devSchool span {
+.Lista.Negra.uoooohohohoh span {
     color: #EA10C7;
 }
 
@@ -76,7 +76,7 @@ input, button {
     margin-left: 1em;
 }
 
-.left-box-aluno {
+.left-box-inimigo {
     display: flex;
     flex-direction: row;
     
@@ -94,7 +94,7 @@ input, button {
     padding-left: 4.3em;
 
 }
-.left-box-aluno div {
+.left-box-inimigo div {
     font-weight: 800;
     color: #1A1A1A;
 }
@@ -167,7 +167,7 @@ input, button {
     background-color: #e9e9e9;
 }
 
-.new-student-box {
+.new-ugly-box {
     display: flex;
     flex-direction: column;
 
@@ -177,24 +177,24 @@ input, button {
         
 }
 
-.bar-new-student {
+.bar-new-ugly {
     border: 3px solid #986CDF;
     border-radius: .5em;
     margin-right: .4em;
     background-color: #986CDF;
 }
 
-.text-new-student {
+.text-new-ugly {
     display: flex;
     flex-direction: row;
 
    font-size: 32px;
 }
-.text-new-student div {
+.text-new-ugly div {
     font-weight: bolder;
 }
 
-.input-new-student {
+.input-new-ugly {
     display: flex;
     flex-direction: row;
     padding-top: 2.4em;
@@ -234,7 +234,7 @@ input {
 
 }
 
-.name-student {
+.name-ugly {
     font-size: 18px;
     color: #615858;
     width: 5.5em;
@@ -243,26 +243,6 @@ input {
 }
 
 
-.number-student {
-    font-size: 18px;
-    color: #615858;
-    width: 5.5em;
-    font-weight: 800;
-}
-
-.class-student {
-    font-size: 18px;
-    color: #615858;
-    margin-right: 0.8em;
-    font-weight: 800;
-}
-
-.corse-student {
-    font-size: 18px;
-    color: #615858;
-    margin-right: 1em;
-    font-weight: 800;
-}
 
 
 .button-create {
@@ -284,7 +264,7 @@ input {
     font-weight: bold;
 }
 
-.student-registered-box {
+.ugly-registered-box {
     display: flex;
     flex-direction: column;
 
@@ -294,7 +274,7 @@ input {
     margin-top: 2em;
     
 }
-.text-registered-student {
+.text-registered-ugly {
     display: flex;
     flex-direction: row;
     font-weight: bolder;
