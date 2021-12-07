@@ -36,4 +36,18 @@ app.get('/pessoas', async (req, resp) => {
     }
  })
 
+ app.post('/inserir', async (req, resp) => {
+    try {
+        let {nome} = req.body;
+        
+        let r = await db.tb_lista_negra.create({
+            nm_aluno: nome
+        })
+        resp.send(r);
+        
+        } catch (e) {
+        resp.send({erro: e.toString()});
+    }
+})
+
 app.listen(process.env.PORT, x => console.log(`Server up at port ${process.env.PORT}`))
